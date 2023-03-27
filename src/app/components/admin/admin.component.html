@@ -1,0 +1,80 @@
+<section>
+    <div class="container-fluid">
+        <div class="navbar">
+          <button (click)="menuToggle()" id="menu-btn"><i class="bi bi-list"></i></button>
+            <!--siderbar-->
+            <div *ngIf="showSidebar">
+              
+                <div  class="sidebar">
+                    <h1 class="navbar-brand">Slack</h1>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item m-2">
+                          <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item m-2">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+              <!--siderbar-->
+              <div class="content">
+                
+                <div class="row">
+
+                  <div class="col-3 m-4 box bg-light">
+                   <img src="/assets/images/employees.png" alt="">
+                    <h4>100+ Employees</h4>
+                  </div>
+                  <div class="col-3 m-4 box bg-light">
+                    <img src="/assets/images/department.png" alt="">
+                    <h4>10+ Departments</h4>
+                  </div>
+                  <div class="col-3 m-4 box bg-light">
+                    <img src="/assets/images/clipboard.png" alt="">
+                    <h4>201 Projects</h4>
+                  </div>
+
+                  <div class="col-5">
+                        <div class="card  bg-info">
+                            <div class="card-body">
+                              <h5 class="card-title">Employee Leave Chart</h5>
+                              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                              
+                            </div>
+                          </div>
+                  </div>
+                  <div class="col-5">
+                        <app-bar></app-bar>
+                  </div>   
+
+                  <div class="col-10 employees">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Department</th>
+                          <th scope="col">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let emp of empdetails; let i=index">
+                          <th scope="row">{{emp.id}}</th>
+                          <td>{{emp.name}}</td>
+                          <td>{{emp.department}}</td>
+                          <button class="btn btn-info m-2" (click)="viewEmployee(i)">view</button>
+                          <button class="btn btn-danger m-2" (click)="deleteEmployee(i)">Delete</button> 
+                        </tr>
+                      </tbody>
+                    </table>      
+                    
+                    
+                    
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>

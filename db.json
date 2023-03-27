@@ -1,0 +1,75 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "name": "John Smith",
+            "department": "Sales",
+            "active": true,
+            "productive_hours": 160,
+            "leaves": 10,
+            "email": "john.smith@company.com",
+            "phone": "+1 (123) 456-7890"
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe",
+            "department": "Marketing",
+            "active": true,
+            "productive_hours": 150,
+            "leaves": 12,
+            "email": "jane.doe@company.com",
+            "phone": "+1 (234) 567-8901"
+        },
+        {
+            "id": 3,
+            "name": "Bob Johnson",
+            "department": "Operations",
+            "active": true,
+            "productive_hours": 180,
+            "leaves": 8,
+            "email": "bob.johnson@company.com",
+            "phone": "+1 (345) 678-9012"
+        },
+        {
+            "id": 4,
+            "name": "Sarah Lee",
+            "department": "Human Resources",
+            "active": true,
+            "productive_hours": 140,
+            "leaves": 15,
+            "email": "sarah.lee@company.com",
+            "phone": "+1 (456) 789-0123"
+        },
+        {
+            "id": 5,
+            "name": "Mark Chen",
+            "department": "Finance",
+            "active": true,
+            "productive_hours": 170,
+            "leaves": 7,
+            "email": "mark.chen@company.com",
+            "phone": "+1 (567) 890-1234"
+        },
+        {
+            "id": 6,
+            "name": "Mary Nguyen",
+            "department": "IT",
+            "active": true,
+            "productive_hours": 175,
+            "leaves": 9,
+            "email": "mary.nguyen@company.com",
+            "phone": "+1 (678) 901-2345"
+        },
+        {
+            "id": 7,
+            "name": "Tom Adams",
+            "department": "Customer Service",
+            "active": false,
+            "productive_hours": 155,
+            "leaves": 11,
+            "email": "tom.adams@company.com",
+            "phone": "+1 (789) 012-3456"
+        }
+    ]
+  }
+  
